@@ -67,6 +67,10 @@
 }
 .scroll {
   z-index: 10001;
+  width: 10%;
+  height: 10%;
+  margin: auto;
+  margin-top: 30%
 }
 
 .scroll ul {
@@ -215,6 +219,8 @@ img{
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 5%;
+  align-content: center;
 }
 
 .container > h3 {
@@ -469,7 +475,6 @@ section{
 
 .contact > div > div{
   float: left;
-  width: 22%;
   border: 1px solid #ecf0f1;
   border-radius: 6px;
   padding: 10px 20px 0 20px;
@@ -581,11 +586,11 @@ footer .copyright a{
 }
 
 @media (max-width: 800px){
+  .scroll {
+    width: 100%;
+  }
   section{
     padding: 80px 10px;
-  }
-  header, footer{
-    padding: 0 10px;
   }
   .splash{
     height: auto;
@@ -594,7 +599,7 @@ footer .copyright a{
   }
   .splash .container{
     position: relative;
-    top: 0;
+    left: 0;
     transform: none;
   }
   .skills > div > div{
@@ -635,23 +640,10 @@ footer .copyright a{
   .splash{
     padding: 100px 10px 40px 10px;
   }
-  .skills > div > div{
-    float: none;
-    width: 100%;
-    margin-bottom: 40px;
-    padding: 0;
+  .skills > div > div >img {
+    display: none;
   }
 
-  .skills > div > h3{
-    font-size: 70px;
-  }
-
-  .skills > div > div:last-child{
-    margin-bottom: 0;
-  }
-  .skills p{
-    overflow: hidden;
-  }
   .feature img{
     display: none;
   }
