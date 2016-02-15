@@ -317,15 +317,17 @@ section{
   padding: 10px 40px 0 40px;
 }
 
-.skills .fa{
+
+
+.skills img{
   display: inline-block;
-  font-size: 50px;
+  /*font-size: 50px;*/
   width: 100px;
   height: 100px;
   border-radius: 50px;
   background: #f6f6f6;
   margin-bottom: 20px;
-  padding-top: 25px;
+  /*padding-top: 25px;*/
 }
 
 .feature.greybg{
@@ -489,10 +491,13 @@ section{
   height: 300px;
   width: 300px;
   margin: 10px;
+  padding: 15px;
 }
 
 .projects div div header {
-  color: blue;
+  color: #34495e;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .projects div div p {
@@ -503,9 +508,21 @@ section{
 
 }
 
+.projects .description {
+  padding: 5%;
+}
+
+.projects div div a:hover {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+
+.projects .images {
+}
+
 .projects .images img {
   width: 300px;
-  height: 145px;
+  height: 130px;
 }
 
 footer{
