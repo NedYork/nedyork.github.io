@@ -65,11 +65,23 @@
   padding-top: 0;
   padding-bottom: 80px;
 }
-
 .scroll {
-  position: absolute;
-  bottom: 0;
+  z-index: 10001;
+}
 
+.scroll ul {
+
+}
+
+.scroll li {
+  width: 50px;
+  margin-left: 40%;
+  margin-top: 35%;
+
+}
+
+.scroll-button:hover {
+  color: #3498db;
 }
 
 .scroll-button {
@@ -311,9 +323,8 @@ section{
   height: 100vh;
   overflow: hidden;
   position: relative;
-
 }
-
+/*
 .splash:before{
   content: "";
   display: block;
@@ -321,7 +332,7 @@ section{
   top: -40px; right: -40px; bottom: -40px; left: -40px;
   opacity: 0.2;
   background: white;
-}
+}*/
 .splash .container{
   position: relative;
   top: 30%;
