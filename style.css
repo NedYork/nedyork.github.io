@@ -63,14 +63,17 @@
 
 .projects {
   padding-top: 0;
-  padding-bottom: 80px;
+}
+
+.projects div {
+  padding-top: 0;
 }
 .scroll {
   z-index: 10001;
   width: 10%;
   height: 10%;
   margin: auto;
-  margin-top: 30%
+  margin-top: 20%
 }
 
 .scroll ul {
@@ -90,7 +93,7 @@
 
 .scroll-button {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: transparent;
+  /*background-color: transparent;*/
   border-radius: 4px;
   border: 1px solid #111;
   box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
@@ -109,6 +112,15 @@
   margin: 0 auto;
 }
 
+.project-item {
+  background: white;
+  margin-top: 2%;
+  width: 100%;
+  height: 50%;
+  float: left;
+  border-radius: 5px;
+  padding: 20px;
+}
 
 
 /* Animations */
@@ -217,9 +229,10 @@ img{
 
 .container{
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   align-content: center;
 }
 
@@ -234,7 +247,7 @@ img{
 }
 
 section{
-  padding: 80px 20px;
+  /*padding: 80px 20px;*/
 }
 
 .btn{
@@ -341,7 +354,7 @@ section{
 }*/
 .splash .container{
   position: relative;
-  top: 30%;
+  top: 40%;
   left: 10%;
   transform: translateY(-50%);
   z-index: 5;
@@ -462,24 +475,26 @@ section{
   text-align: center;
   color: white;
   margin: auto;
+  padding: 80px;
 }
 
-.contact:after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: -40px; right: -40px; bottom: -40px; left: -40px;
-  background: rgba(255,255,255,0.1);
-  transform: rotate(30deg);
+.contact > h1 {
+  height: 60px;
 }
 
-.contact > div > div{
+.contact .social{
   float: left;
   border: 1px solid #ecf0f1;
   border-radius: 6px;
   padding: 10px 20px 0 20px;
   margin: 10px;
   height: 155px;
+}
+
+.contact .contact-group {
+  display: inline-block;
+  /*background: black;*/
+  margin: auto;
 }
 
 .contact .social a {
@@ -517,31 +532,23 @@ section{
   margin: auto;
 }
 
-.projects div {
+.projects .projects-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.projects > div {
   text-align: center;
+  align-content: center;
 }
 
-.projects div article {
-  width: 650px;
-  margin: 0 auto;
-}
-
-.projects div article div {
-  border-radius: 3px;
-  float: left;
-  text-align: center;
-  background: white;
-  border-radius: 1px solid grey;
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-  padding: 15px;
-}
-
-.projects div div header {
+.projects div header {
   color: #34495e;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 5%;
+  font-size: 30px;
+
 }
 
 .projects div div p {
@@ -574,6 +581,11 @@ footer{
   color: #ccc;
   padding: 0 20px;
 }
+
+footer .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 footer .copyright{
   float: left;
   padding: 15px 0;
@@ -590,7 +602,7 @@ footer .copyright a{
     width: 100%;
   }
   section{
-    padding: 80px 10px;
+    padding: 5% 10px;
   }
   .splash{
     height: auto;
@@ -617,6 +629,7 @@ footer .copyright a{
   header nav ul li a{
     padding: 15px;
   }
+
   .projects > div > div{
     width: 100% !important;
     float: none;
@@ -651,6 +664,21 @@ footer .copyright a{
     width: 100%;
     float: none;
   }
+
+  .projects .description {
+    /*border-radius: 0;
+    float: none;
+    text-align: center;
+    background: transparent;
+    border-radius: 1px solid grey;
+    height: 70px;
+    width: 275px;
+    margin: 10px;
+    padding: 15px;*/
+    float: left;
+  }
+
+
   header nav{
     float: none;
     position: fixed;
