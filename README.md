@@ -1,3 +1,3 @@
 # Personal Site
 
-[Live][http://nedyork.github.io]
+[Live](http://nedyork.github.io)
